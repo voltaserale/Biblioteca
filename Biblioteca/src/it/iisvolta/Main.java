@@ -159,6 +159,7 @@ public class Main {
                         {
                         	nrPrestiti++;
                         	Prestito p=new Prestito(nrPrestiti, utentePrestito, libroDaPrestare);
+                        	libroDaPrestare.setNrCopie(libroDaPrestare.getNrCopie()-1);
                         	elencoPrestiti.add(p);
                         }
                     }
